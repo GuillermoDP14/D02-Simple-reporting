@@ -17,4 +17,28 @@
 
 	<import resource="conversion-service.xml" />
 
+	<!-- Announcements -->
+	
+	<bean id="announcement1" class="acme.entities.announcements.Announcement">
+		<property name="title" value="Sample announcement 01"/>
+		<property name="moment" value="2019/06/10 10:35"/>	
+		<property name="moreInfo"><null/></property>
+		<property name="text" value="This is the description of a sample announcement"/>		
+	</bean>
+	
+	<bean id="announcement2" class="acme.entities.announcements.Announcement">
+		<property name="title" value="Sample announcement 02"/>
+		<property name="moment" value="2019/06/10 00:00"/>	
+		<property name="moreInfo" value="http://example.com"/>
+		<property name="text" value="This is the description of another announcement"/>		
+	</bean>
+	
+	<bean id="announcement3" class="acme.entities.announcements.Announcement">
+		<property name="title" value="Sample announcement 03"/>
+		<property name="moment" value="1900/10/10 19:10"/>	
+		<property name="moreInfo" value="http://example.com"/>
+		<property name="text" value="This is a very old announcement"/>		
+	</bean>
+	
+
 </beans>
