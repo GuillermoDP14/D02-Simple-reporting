@@ -1,16 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<!--
-- sample-data.xml
--
-- Copyright (c) 2019 Rafael Corchuelo.
--
-- In keeping with the traditional purpose of furthering education and research, it is
-- the policy of the copyright owner to permit non-commercial use and redistribution of
-- this software. It has been tested carefully, but it is not guaranteed for any particular
-- purposes.  The copyright owner does not offer any warranties or representations, nor do
-- they accept any liabilities with respect to them.
--->
+<!-- - sample-data.xml - - Copyright (c) 2019 Rafael Corchuelo. - - In keeping with the traditional purpose of furthering education and 
+	research, it is - the policy of the copyright owner to permit non-commercial use and redistribution of - this software. It has been tested 
+	carefully, but it is not guaranteed for any particular - purposes. The copyright owner does not offer any warranties or representations, 
+	nor do - they accept any liabilities with respect to them. -->
 
 <beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
@@ -18,27 +11,67 @@
 	<import resource="conversion-service.xml" />
 
 	<!-- Announcements -->
-	
+
 	<bean id="announcement1" class="acme.entities.announcements.Announcement">
-		<property name="title" value="Sample announcement 01"/>
-		<property name="moment" value="2019/06/10 10:35"/>	
-		<property name="moreInfo"><null/></property>
-		<property name="text" value="This is the description of a sample announcement"/>		
+		<property name="title" value="Sample announcement 01" />
+		<property name="moment" value="2019/06/10 10:35" />
+		<property name="moreInfo">
+			<null />
+		</property>
+		<property name="text" value="This is the description of a sample announcement" />
 	</bean>
-	
+
 	<bean id="announcement2" class="acme.entities.announcements.Announcement">
-		<property name="title" value="Sample announcement 02"/>
-		<property name="moment" value="2019/06/10 00:00"/>	
-		<property name="moreInfo" value="http://example.com"/>
-		<property name="text" value="This is the description of another announcement"/>		
+		<property name="title" value="Sample announcement 02" />
+		<property name="moment" value="2019/06/10 00:00" />
+		<property name="moreInfo" value="http://example.com" />
+		<property name="text" value="This is the description of another announcement" />
 	</bean>
-	
+
 	<bean id="announcement3" class="acme.entities.announcements.Announcement">
-		<property name="title" value="Sample announcement 03"/>
-		<property name="moment" value="1900/10/10 19:10"/>	
-		<property name="moreInfo" value="http://example.com"/>
-		<property name="text" value="This is a very old announcement"/>		
+		<property name="title" value="Sample announcement 03" />
+		<property name="moment" value="1900/10/10 19:10" />
+		<property name="moreInfo" value="http://example.com" />
+		<property name="text" value="This is a very old announcement" />
 	</bean>
-	
+
+
+	<bean id="request1" class="acme.entities.requests.Request">
+		<property name="title" value="Sample request 01" />
+		<property name="moment" value="2019/10/10 19:10" />
+		<property name="deadline" value="2019/11/10 19:10" />
+		<property name="text" value="This is a recent announcement" />
+		<property name="reward">
+			<ref bean="money1" />
+		</property>
+		<property name="ticker" value="RACBD-12345" />
+	</bean>
+
+	<bean id="offer1" class="acme.entities.offers.Offer">
+		<property name="title" value="Sample offer 01" />
+		<property name="moment" value="2019/10/10 19:10" />
+		<property name="deadline" value="2019/11/10 19:10" />
+		<property name="text" value="The new offer is here!" />
+		<property name="minMoney">
+			<ref bean="money1" />
+		</property>
+		<property name="maxMoney">
+			<ref bean="money2" />
+		</property>
+		<property name="ticker" value="OACBD-12345" />
+	</bean>
+
+
+	<bean id="money1" class="acme.framework.datatypes.Money">
+		<property name="amount" value="400.00" />
+		<property name="currency" value="€" />
+	</bean>
+
+	<bean id="money2" class="acme.framework.datatypes.Money">
+		<property name="amount" value="500.00" />
+		<property name="currency" value="€" />
+	</bean>
+
+
 
 </beans>
