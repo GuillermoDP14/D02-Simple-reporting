@@ -12,12 +12,12 @@
 
 master.banner.background = #FFE97F 
 
-﻿# master.welcome ##############################################################
+# master.welcome ##############################################################
 
 master.welcome.title = ¡Bienvenidos!
 master.welcome.text = \
-	Bienvenidos a Acme Stater!  Nunca antes ha sido tan sencillo desarrollar un \
-	proyecto y hacerlo funcionar.
+	Bienvenidos a Acme Jobs!  Nunca antes ha sido tan sencillo encontrar un \
+	trabajo.
 
 # master.menu #################################################################
 
@@ -29,7 +29,9 @@ master.menu.sign-out = Salir
 # master.menu.anonymous #######################################################
 
 master.menu.anonymous = Anónimo
-master.menu.anonymous.favourite-link = Enlace favorito
+master.menu.anonymous.favourite-link1 = Enlace de Adrian
+master.menu.anonymous.favourite-link0 = Enlace de Manuel
+master.menu.anonymous.favourite-link = Enlace de Guillermo
 
 # master.menu.administrator ###################################################
 
@@ -55,13 +57,13 @@ master.menu.user-account.provider = Datos de proveedor
 master.menu.user-account.become-provider = Hazte proveedor
 master.menu.user-account.consumer = Datos de consumidor
 master.menu.user-account.become-consumer = Hazte consumidor
-master.menu.user-account.reporting = Listas simples
+
+master.menu.user-account.reporting = Información simple
 master.menu.user-account.announcement.list = Anuncios
 master.menu.user-account.request.list = Peticiones
 master.menu.user-account.offer.list = Ofertas
 
-
-﻿# master.footer ###############################################################
+# master.footer ###############################################################
 
 master.footer.title.about = Nosotros
 master.footer.label.company = La empresa
@@ -77,10 +79,10 @@ master.footer.label.spanish = Español
 
 master.company.title = La compañía
 master.company.text = \
-	Starter Project, Inc. es una compañía fictícia que proporciona un proyecto \
+	Acme Jobs, Inc. es una compañía fictícia que proporciona un proyecto \
 	plantilla para los estudiantes de la asignatura Diseño y Pruebas, en el Grado \
 	en Ingeniería del Software de la Universidad de Sevilla.
-master.company.name = Starter Project, Inc.
+master.company.name = Acme Jobs, Inc.
 master.company.address = Calle, número, Ciudad, Estado, País
 master.company.phone = +000 123 456
 master.company.email = contact@acme.com
