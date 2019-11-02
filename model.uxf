@@ -309,7 +309,7 @@ has v</panel_attributes>
 --
 + title: String {NotBlank}
 + moment: Date {Temporal(TIMESTAMP), Past, DateTimeFormat(pattern = "dd/MM/yyyy HH:mm")}
-+ deadline: Date {Temporal(TIMESTAMP), DateTimeFormat(pattern = "dd/MM/yyyy HH:mm")}
++ deadline: Date {Temporal(TIMESTAMP), DateTimeFormat(pattern = "dd/MM/yyyy HH:mm"), Future}
 + text: String {NotBlank}
 + reward: Money {NotNull, Valid}
 + ticker: String {NotBlank, Pattern(regexp = "^([R][A-Z]{4}[-][0-9]{5})$")}
@@ -328,7 +328,7 @@ has v</panel_attributes>
 --
 + title: String {NotBlank}
 + moment: Date {Temporal(TIMESTAMP), Past, DateTimeFormat(pattern = "dd/MM/yyyy HH:mm")}
-+ deadline: Date {Temporal(TIMESTAMP), DateTimeFormat(pattern = "dd/MM/yyyy HH:mm")} )
++ deadline: Date {Temporal(TIMESTAMP), DateTimeFormat(pattern = "dd/MM/yyyy HH:mm")}, Future )
 + text: String {NotBlank}
 + minMoney: Money {NotNull, Valid}
 + maxMoney: Money {NotNull, Valid}

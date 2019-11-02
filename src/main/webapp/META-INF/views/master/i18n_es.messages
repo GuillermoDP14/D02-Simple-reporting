@@ -58,6 +58,11 @@ master.menu.user-account.become-provider = Hazte proveedor
 master.menu.user-account.consumer = Datos de consumidor
 master.menu.user-account.become-consumer = Hazte consumidor
 
+master.menu.user-account.reporting = Información simple
+master.menu.user-account.announcement.list = Anuncios
+master.menu.user-account.request.list = Peticiones
+master.menu.user-account.offer.list = Ofertas
+
 # master.footer ###############################################################
 
 master.footer.title.about = Nosotros
