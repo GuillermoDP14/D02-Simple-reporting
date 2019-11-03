@@ -22,8 +22,8 @@
 		<put-attribute name="body" type="template" value="../anonymous/company-record/list.jsp" />
 	</definition>
 	
-		<definition name="authenticated/announcement/form" extends="master">		
-		<put-attribute name="body" type="template" value="../authenticated/announcement/form.jsp" />
+		<definition name="anonymous/company-record/form" extends="master">		
+		<put-attribute name="body" type="template" value="../anonymous/company-record/form.jsp" />
 	</definition>
 	
 
