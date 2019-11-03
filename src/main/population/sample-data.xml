@@ -47,6 +47,7 @@
 		<property name="sector" value="example 1"/>	
 		<property name="coName" value="CO Name ex1"/>
 		<property name="phone" value="+999(9999)999999"/>
+		<property name="web" value="http://company1example.com"/>
 		<property name="mail" value="companymail1@example.com"/>
 		<property name="inc" value="true"/>	
 		<property name="stars" value="3"/>	

@@ -31,6 +31,7 @@ master.menu.anonymous = Anonymous
 master.menu.anonymous.favourite-link1 = Adri's link
 master.menu.anonymous.favourite-link0 = Manuel's link
 master.menu.anonymous.favourite-link = Guillermo's link
+master.menu.anonymous.company-record.list = Company Records List
 
 # master.menu.administrator ###################################################
 
