@@ -61,6 +61,29 @@
 		<property name="ticker" value="OACBD-12345" />
 	</bean>
 
+	<!-- CompanyRecords-->
+	
+	<bean id="companyRecord1" class="acme.entities.companyRecords.CompanyRecord">
+		<property name="name" value="Company 1"/>
+		<property name="sector" value="example 1"/>	
+		<property name="coName" value="CO Name ex1"/>
+		<property name="phone" value="+999(9999)999999"/>
+		<property name="web" value="http://company1example.com"/>
+		<property name="mail" value="companymail1@example.com"/>
+		<property name="inc" value="true"/>	
+		<property name="stars" value="3"/>	
+	</bean>
+	
+	<!-- InvestorRecords-->
+	
+	<bean id="investorRecord1" class="acme.entities.investorRecords.InvestorRecord">
+		<property name="name" value="Company 1"/>
+		<property name="sector" value="example 1"/>	
+		<property name="investingStatment" value="etc.."/>
+		<property name="stars" value="5"/>	
+	</bean>
+
+<!--Money-->
 
 	<bean id="money1" class="acme.framework.datatypes.Money">
 		<property name="amount" value="400.00" />
@@ -71,7 +94,5 @@
 		<property name="amount" value="500.00" />
 		<property name="currency" value="€" />
 	</bean>
-
-
 
 </beans>
