@@ -64,6 +64,7 @@ master.menu.user-account.announcement.list = Announcement list
 master.menu.user-account.request.list = Request 
 master.menu.user-account.offer.list = Offer list
 master.menu.user-account.company-record.list = Company Records List
+master.menu.user-account.investor-record.list = Investor Records List
 
 
 # master.footer ###############################################################
