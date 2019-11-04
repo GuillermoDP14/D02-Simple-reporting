@@ -33,6 +33,8 @@ master.menu.anonymous.favourite-link1 = Enlace de Adrian
 master.menu.anonymous.favourite-link0 = Enlace de Manuel
 master.menu.anonymous.favourite-link = Enlace de Guillermo
 master.menu.anonymous.company-record.list = Lista de Registros de Compañías
+master.menu.anonymous.investor-record.list = Lista de Registros de Inversiones
+
 
 # master.menu.administrator ###################################################
 
