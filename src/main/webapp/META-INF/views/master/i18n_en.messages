@@ -58,6 +58,12 @@ master.menu.user-account.become-provider = Become a provider
 master.menu.user-account.consumer = Consumer data
 master.menu.user-account.become-consumer = Become a consumer
 
+master.menu.user-account.reporting = Simple reporting
+master.menu.user-account.announcement.list = Announcement list
+master.menu.user-account.request.list = Request 
+master.menu.user-account.offer.list = Offer list
+
+
 # master.footer ###############################################################
 
 master.footer.title.about = About us
