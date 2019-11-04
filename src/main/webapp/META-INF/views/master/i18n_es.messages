@@ -63,6 +63,8 @@ master.menu.user-account.reporting = Información simple
 master.menu.user-account.announcement.list = Anuncios
 master.menu.user-account.request.list = Peticiones
 master.menu.user-account.offer.list = Ofertas
+master.menu.user-account.company-record.list = Company Records List
+
 
 # master.footer ###############################################################
 

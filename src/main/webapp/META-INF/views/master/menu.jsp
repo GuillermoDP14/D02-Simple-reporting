@@ -22,7 +22,7 @@
 			<acme:menu-suboption code="master.menu.anonymous.favourite-link1" action="http://www.youtube.com/"/>
 			<acme:menu-suboption code="master.menu.anonymous.favourite-link0" action="https://www.youtube.com/watch?v=ht6VF5no938"/>
 			<acme:menu-suboption code="master.menu.anonymous.favourite-link" action="https://www.nbamaniacs.com"/>
-      <acme:menu-suboption code="master.menu.anonymous.company-record.list" action="/anonymous/company-record/list"/>
+      		<acme:menu-suboption code="master.menu.anonymous.company-record.list" action="/anonymous/company-record/list"/>
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.administrator" access="hasRole('Administrator')">
@@ -48,6 +48,7 @@
 			<acme:menu-suboption code="master.menu.user-account.announcement.list" action="/authenticated/announcement/list"/>
 			<acme:menu-suboption code="master.menu.user-account.request.list" action="/authenticated/request/list"/>
 			<acme:menu-suboption code="master.menu.user-account.offer.list" action="/authenticated/offer/list"/>
+			<acme:menu-suboption code="master.menu.user-account.company-record.list" action="/authenticated/company-record/list"/>
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.user-account" access="isAuthenticated()">
