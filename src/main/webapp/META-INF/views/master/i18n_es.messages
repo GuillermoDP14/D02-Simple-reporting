@@ -65,7 +65,8 @@ master.menu.user-account.reporting = Información simple
 master.menu.user-account.announcement.list = Anuncios
 master.menu.user-account.request.list = Peticiones
 master.menu.user-account.offer.list = Ofertas
-master.menu.user-account.company-record.list = Company Records List
+master.menu.user-account.company-record.list = Lista de Registros de Compañías
+master.menu.anonymous.investor-record.list = Lista de Registros de Inversiones
 
 
 # master.footer ###############################################################
