@@ -4,6 +4,8 @@ package acme.entities.companyRecords;
 import javax.persistence.Entity;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.Pattern;
+
 
 import org.hibernate.validator.constraints.Range;
 import org.hibernate.validator.constraints.URL;
@@ -30,13 +32,17 @@ public class CompanyRecord extends DomainEntity {
 	private String				sector;
 
 	@NotBlank
-	private String				coName;
+	private String				ceoName;
+
+	@NotBlank
+	private String				activitiesDescription;
 
 	@URL
+	@NotBlank
 	private String				web;
 
 	@NotBlank
-	//@Pattern(regexp = "^(\\+\\d{1,3}\\(\\d{1,4}\\)\\?)?(\\d{6,9})$")
+	@Pattern(regexp = "^([+]([1-9][0-9]{0,3})\\s)?([(]{0,1}[0-9]{1,4}[)])?[0-9].{5,9}$")
 	/*
 	 * +999(9999)999999
 	 * +999 optional, rang(1,999)
@@ -45,10 +51,10 @@ public class CompanyRecord extends DomainEntity {
 	 */
 	private String				phone;
 
-	@Email
+  @Email
+	@NotBlank
 	private String				mail;
 
-	//@NotBlank ???
 	private boolean				inc;
 
 	@Range(min = 0, max = 5)

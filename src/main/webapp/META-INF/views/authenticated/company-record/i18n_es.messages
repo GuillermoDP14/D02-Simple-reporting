@@ -14,7 +14,8 @@ authenticated.company-record.list.label.stars = Estrellas
 
 authenticated.company-record.form.label.name = Nombre
 authenticated.company-record.form.label.sector = Sector
-authenticated.company-record.form.label.coName = Nombre del CEO
+authenticated.company-record.form.label.ceoName = Nombre del CEO
+authenticated.company-record.form.label.activitiesDescription = Desc. Actividades
 authenticated.company-record.form.label.web = Web
 authenticated.company-record.form.label.phone = Tlf
 authenticated.company-record.form.label.mail = eMail
