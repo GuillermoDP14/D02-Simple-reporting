@@ -35,16 +35,45 @@
 		<property name="text" value="This is a very old announcement" />
 	</bean>
 
+	<bean id="announcement4" class="acme.entities.announcements.Announcement">
+		<property name="title" value="Sample announcement 04" />
+		<property name="moment" value="2019/11/05 00:00" />
+		<property name="moreInfo" value="http://example.com" />
+		<property name="text" value="This is an announcement was made in November" />
+	</bean>
+
 
 	<bean id="request1" class="acme.entities.requests.Request">
 		<property name="title" value="Sample request 01" />
-		<property name="moment" value="2019/10/10 19:10" />
-		<property name="deadline" value="2019/11/10 19:10" />
+		<property name="moment" value="2019/11/01 19:10" />
+		<property name="deadline" value="2020/10/10 19:10" />
 		<property name="text" value="This is a recent announcement" />
 		<property name="reward">
 			<ref bean="money1" />
 		</property>
-		<property name="ticker" value="RACBD-12345" />
+		<property name="ticker" value="RACBD-12845" />
+	</bean>
+
+	<bean id="request2" class="acme.entities.requests.Request">
+		<property name="title" value="Sample request 02" />
+		<property name="moment" value="2019/09/10 19:10" />
+		<property name="deadline" value="2020/01/01 19:10" />
+		<property name="text" value="This is a announcement was made in September" />
+		<property name="reward">
+			<ref bean="money1" />
+		</property>
+		<property name="ticker" value="RACBD-17345" />
+	</bean>
+
+	<bean id="request3" class="acme.entities.requests.Request">
+		<property name="title" value="Sample request 03" />
+		<property name="moment" value="2018/10/10 19:10" />
+		<property name="deadline" value="2019/11/01 19:10" />
+		<property name="text" value="This is a old announcement" />
+		<property name="reward">
+			<ref bean="money1" />
+		</property>
+		<property name="ticker" value="RACBD-02345" />
 	</bean>
 
 	<bean id="offer1" class="acme.entities.offers.Offer">
@@ -58,9 +87,60 @@
 		<property name="maxMoney">
 			<ref bean="money2" />
 		</property>
-		<property name="ticker" value="OACBD-12345" />
+		<property name="ticker" value="OACBD-12349" />
 	</bean>
 
+	<bean id="offer2" class="acme.entities.offers.Offer">
+		<property name="title" value="Sample offer 02" />
+		<property name="moment" value="2019/10/10 19:10" />
+		<property name="deadline" value="2019/11/10 19:10" />
+		<property name="text" value="The new offer is here!" />
+		<property name="minMoney">
+			<ref bean="money1" />
+		</property>
+		<property name="maxMoney">
+			<ref bean="money2" />
+		</property>
+		<property name="ticker" value="OACBD-12945" />
+	</bean>
+
+	<bean id="offer3" class="acme.entities.offers.Offer">
+		<property name="title" value="Sample offer 03" />
+		<property name="moment" value="2019/10/10 19:10" />
+		<property name="deadline" value="2018/11/10 19:10" />
+		<property name="text" value="The old offer is here!" />
+		<property name="minMoney">
+			<ref bean="money1" />
+		</property>
+		<property name="maxMoney">
+			<ref bean="money2" />
+		</property>
+		<property name="ticker" value="OACBD-14345" />
+	</bean>
+
+	<!-- CompanyRecords -->
+
+	<bean id="companyRecord1" class="acme.entities.companyRecords.CompanyRecord">
+		<property name="name" value="Company 1" />
+		<property name="sector" value="example 1" />
+		<property name="coName" value="CO Name ex1" />
+		<property name="phone" value="+999(9999)999999" />
+		<property name="web" value="http://company1example.com" />
+		<property name="mail" value="companymail1@example.com" />
+		<property name="inc" value="true" />
+		<property name="stars" value="3" />
+	</bean>
+
+	<!-- InvestorRecords -->
+
+	<bean id="investorRecord1" class="acme.entities.investorRecords.InvestorRecord">
+		<property name="name" value="Company 1" />
+		<property name="sector" value="example 1" />
+		<property name="investingStatment" value="etc.." />
+		<property name="stars" value="5" />
+	</bean>
+
+	<!--Money -->
 
 	<bean id="money1" class="acme.framework.datatypes.Money">
 		<property name="amount" value="400.00" />
@@ -71,7 +151,5 @@
 		<property name="amount" value="500.00" />
 		<property name="currency" value="€" />
 	</bean>
-
-
 
 </beans>

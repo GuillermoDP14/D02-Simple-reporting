@@ -10,6 +10,7 @@
 
 authenticated.request.list.label.title = Titulo
 authenticated.request.list.label.moment = Momento
+authenticated.request.list.label.deadline = Fecha final
 
 authenticated.request.form.label.title = Titulo:
 authenticated.request.form.label.text = Texto:

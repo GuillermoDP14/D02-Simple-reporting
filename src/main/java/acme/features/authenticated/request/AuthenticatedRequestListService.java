@@ -35,7 +35,7 @@ public class AuthenticatedRequestListService implements AbstractListService<Auth
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "moment", "title");
+		request.unbind(entity, model, "moment", "title", "deadline");
 
 	}
 
