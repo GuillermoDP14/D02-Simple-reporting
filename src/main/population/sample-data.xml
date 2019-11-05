@@ -39,5 +39,12 @@
 		<property name="moreInfo" value="http://www.example.com"/>
 		<property name="text" value="This is the description of a sample announcement"/>
 	</bean>
+	
+	<bean id="announcement04" class="acme.entities.announcements.Announcement">
+		<property name="title" value="Sample announcement 04"/>
+		<property name="moment" value="2019/11/04 09:40"/>
+		<property name="moreInfo" value="http://www.example.com"/>
+		<property name="text" value="Este si tiene menos de un mes"/>
+	</bean>
 
 </beans>
