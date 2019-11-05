@@ -14,7 +14,8 @@ anonymous.company-record.list.label.stars = Stars
 
 anonymous.company-record.form.label.name = Name
 anonymous.company-record.form.label.sector = Sector
-anonymous.company-record.form.label.coName = CEO Name
+anonymous.company-record.form.label.ceoName = CEO Name
+anonymous.company-record.form.label.activitiesDescription = Desc. Activities
 anonymous.company-record.form.label.web = Web
 anonymous.company-record.form.label.phone = Phone
 anonymous.company-record.form.label.mail = eMail

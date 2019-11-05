@@ -33,7 +33,8 @@
     create table `company_record` (
        `id` integer not null,
         `version` integer not null,
-        `co_name` varchar(255),
+        `activities_description` varchar(255),
+        `ceo_name` varchar(255),
         `inc` bit not null,
         `mail` varchar(255),
         `name` varchar(255),
@@ -60,6 +61,8 @@
         `name` varchar(255),
         `sector` varchar(255),
         `stars` integer not null,
+        primary key (`id`)
+    ) engine=InnoDB;
 
     create table `offer` (
        `id` integer not null,
