@@ -6,6 +6,7 @@ import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Pattern;
 
+
 import org.hibernate.validator.constraints.Range;
 import org.hibernate.validator.constraints.URL;
 
@@ -50,7 +51,7 @@ public class CompanyRecord extends DomainEntity {
 	 */
 	private String				phone;
 
-	@Email
+  @Email
 	@NotBlank
 	private String				mail;
 

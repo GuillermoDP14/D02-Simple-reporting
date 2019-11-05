@@ -35,6 +35,7 @@
         `version` integer not null,
         `activities_description` varchar(255),
         `ceo_name` varchar(255),
+
         `inc` bit not null,
         `mail` varchar(255),
         `name` varchar(255),

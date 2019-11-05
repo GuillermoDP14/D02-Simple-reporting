@@ -296,10 +296,10 @@ has v</panel_attributes>
     <panel_attributes>Request
 --
 + title: String {NotBlank}
-+ moment: Date {Temporal(TIMESTAMP), Past, DateTimeFormat(pattern = "dd/MM/yyyy HH:mm")}
-+ deadline: Date {Temporal(TIMESTAMP), DateTimeFormat(pattern = "dd/MM/yyyy HH:mm"), Future}
++ moment: Date {Temporal(TIMESTAMP), Past}
++ deadline: Date {Temporal(TIMESTAMP)}
 + text: String {NotBlank}
-+ reward: Money {NotNull, Valid}
++ reward: Money 
 + ticker: String {NotBlank, Pattern(regexp = "^([R][A-Z]{4}[-][0-9]{5})$")}
 </panel_attributes>
     <additional_attributes/>
@@ -315,12 +315,12 @@ has v</panel_attributes>
     <panel_attributes>Offer
 --
 + title: String {NotBlank}
-+ moment: Date {Temporal(TIMESTAMP), Past, DateTimeFormat(pattern = "dd/MM/yyyy HH:mm")}
-+ deadline: Date {Temporal(TIMESTAMP), DateTimeFormat(pattern = "dd/MM/yyyy HH:mm")}, Future )
++ moment: Date {Temporal(TIMESTAMP), Past}
++ deadline: Date {Temporal(TIMESTAMP)}
 + text: String {NotBlank}
 + minMoney: Money {NotNull, Valid}
 + maxMoney: Money {NotNull, Valid}
-+ ticker: String {NotBlank, Pattern(regexp = "^([R][A-Z]{4}[-][0-9]{5})$")}
++ ticker: String {NotBlank, Pattern(regexp = "^([O][A-Z]{4}[-][0-9]{5})$")}
 </panel_attributes>
     <additional_attributes/>
   </element>
