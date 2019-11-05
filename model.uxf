@@ -300,7 +300,7 @@ has v</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>203</x>
-      <y>441</y>
+      <y>343</y>
       <w>224</w>
       <h>84</h>
     </coordinates>
@@ -315,32 +315,22 @@ has v</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>203</x>
-      <y>343</y>
-      <w>224</w>
-      <h>84</h>
-    </coordinates>
-    <panel_attributes>Shout
---
-+ author: String {NotBlank}
-+ text: String {NotBlank}
-+ moment: Date {Temporal(TIMESTAMP), Past}</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>455</x>
-      <y>343</y>
-      <w>238</w>
-      <h>84</h>
+      <x>441</x>
+      <y>336</y>
+      <w>308</w>
+      <h>126</h>
     </coordinates>
     <panel_attributes>Challenges
 --
 + title: String{NotBlank}
-+ deadline: Date{Temporal(TIMESTAMP),Past}
++ deadline: Date{Temporal(TIMESTAMP)}
 + description: String{NotBlank}
-+ </panel_attributes>
++ goldReward: Money
++ silverReward: Money
++ bronzeReward: Money
++ goldGoal: String{NotBlank}
++ silverGoal: String{NotBlank}
++ bronzeGoal: String{NotBlank}</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>

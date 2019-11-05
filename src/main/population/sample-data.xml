@@ -21,30 +21,87 @@
 	
 	<bean id="announcement01" class="acme.entities.announcements.Announcement">
 		<property name="title" value="Sample announcement 01"/>
-		<property name="moment" value="2019/05/10 10:40"/>
+		<property name="moment" value="2019/11/03 10:40"/>
 		<property name="moreInfo"><null/></property>
 		<property name="text" value="This is the description of a sample announcement"/>
 	</bean>
 	
 	<bean id="announcement02" class="acme.entities.announcements.Announcement">
 		<property name="title" value="Sample announcement 02"/>
-		<property name="moment" value="2019/06/28 12:30"/>
+		<property name="moment" value="2019/10/28 12:30"/>
 		<property name="moreInfo" value="http://www.example.com"/>
 		<property name="text" value="This is the description of a sample announcement"/>
 	</bean>
 	
 	<bean id="announcement03" class="acme.entities.announcements.Announcement">
 		<property name="title" value="Sample announcement 03"/>
-		<property name="moment" value="2019/07/20 09:40"/>
+		<property name="moment" value="2019/05/20 09:40"/>
 		<property name="moreInfo" value="http://www.example.com"/>
 		<property name="text" value="This is the description of a sample announcement"/>
 	</bean>
 	
 	<bean id="announcement04" class="acme.entities.announcements.Announcement">
 		<property name="title" value="Sample announcement 04"/>
-		<property name="moment" value="2019/11/04 09:40"/>
+		<property name="moment" value="2019/11/01 09:40"/>
 		<property name="moreInfo" value="http://www.example.com"/>
 		<property name="text" value="Este si tiene menos de un mes"/>
 	</bean>
+	
+	<!-- Money para challenge -->
+	
+	<bean id="money1" class="acme.framework.datatypes.Money">
+		<property name="amount" value="500.00" />
+		<property name="currency" value="€" />
+	</bean>
+	
+	<bean id="money2" class="acme.framework.datatypes.Money">
+		<property name="amount" value="250.00" />
+		<property name="currency" value="€" />
+	</bean>
+	
+	<bean id="money3" class="acme.framework.datatypes.Money">
+		<property name="amount" value="100.00" />
+		<property name="currency" value="€" />
+	</bean>
+	 
+	
+	<!-- Challenges -->
+	
+	<bean id="challenge01" class="acme.entities.challenges.Challenge">
+		<property name="title" value="Sample challenge 01"/>
+		<property name="deadline" value="2020/06/28 23:59"/>
+		<property name="description" value="This is a simple description!"/>
+		<property name="goldReward" ref="money1"/>
+		<property name="silverReward" ref="money2"/>
+		<property name="bronzeReward" ref="money3"/>
+		<property name="goldGoal" value="Get the requirements of A!"/>
+		<property name="silverGoal" value="Get the requirements of B!"/>
+		<property name="bronzeGoal" value="Get the requirements of C!"/>
+	</bean>
+	
+	<bean id="challenge02" class="acme.entities.challenges.Challenge">
+		<property name="title" value="Sample challenge 02"/>
+		<property name="deadline" value="2019/07/20 09:00"/>
+		<property name="description" value="This is a simple description!"/>
+		<property name="goldReward" ref="money1"/>
+		<property name="silverReward" ref="money2"/>
+		<property name="bronzeReward" ref="money3"/>
+		<property name="goldGoal" value="Get the requirements of A!"/>
+		<property name="silverGoal" value="Get the requirements of B!"/>
+		<property name="bronzeGoal" value="Get the requirements of C!"/>
+	</bean>
+	
+	<bean id="challenge03" class="acme.entities.challenges.Challenge">
+		<property name="title" value="Sample challenge 03"/>
+		<property name="deadline" value="2020/11/04 12:00"/>
+		<property name="description" value="This is a simple description!"/>
+		<property name="goldReward" ref="money1"/>
+		<property name="silverReward" ref="money2"/>
+		<property name="bronzeReward" ref="money3"/>
+		<property name="goldGoal" value="Get the requirements of A!"/>
+		<property name="silverGoal" value="Get the requirements of B!"/>
+		<property name="bronzeGoal" value="Get the requirements of C!"/>
+	</bean>
+	
 
 </beans>

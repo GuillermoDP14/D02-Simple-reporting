@@ -42,6 +42,7 @@ master.menu.administrator.shutdown = Parar el sistema
 
 master.menu.authenticated = Autenticado
 master.menu.authenticated.announcements = Listar anuncios
+master.menu.authenticated.challenges = Desafíos
 
 
 # master.menu.provider ########################################################

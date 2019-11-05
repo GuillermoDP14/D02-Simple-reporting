@@ -42,6 +42,8 @@
 		<acme:menu-option code="master.menu.authenticated" access="isAuthenticated()">
 			<acme:menu-suboption code="master.menu.authenticated.announcements" action="/authenticated/announcement/list" access="!hasRole('Administrator')"/>
 			<acme:menu-suboption code="master.menu.authenticated.announcements" action="/administrator/announcement/list" access="hasRole('Administrator')"/>
+			<acme:menu-suboption code="master.menu.authenticated.challenges" action="/authenticated/announcement/list" access="!hasRole('Administrator')"/>
+			<acme:menu-suboption code="master.menu.authenticated.challenges" action="/administrator/announcement/list" access="hasRole('Administrator')"/>
 		</acme:menu-option>
 
 	</acme:menu-left>
