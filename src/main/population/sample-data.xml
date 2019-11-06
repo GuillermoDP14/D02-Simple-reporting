@@ -1,3 +1,4 @@
+
 <?xml version="1.0" encoding="utf-8"?>
 
 <!-- - sample-data.xml - - Copyright (c) 2019 Rafael Corchuelo. - - In keeping with the traditional purpose of furthering education and 
@@ -10,36 +11,91 @@
 
 	<import resource="conversion-service.xml" />
 
+
 	<!-- Announcements -->
-
-	<bean id="announcement1" class="acme.entities.announcements.Announcement">
-		<property name="title" value="Sample announcement 01" />
-		<property name="moment" value="2019/06/10 10:35" />
-		<property name="moreInfo">
-			<null />
-		</property>
-		<property name="text" value="This is the description of a sample announcement" />
+	
+	<bean id="announcement01" class="acme.entities.announcements.Announcement">
+		<property name="title" value="Sample announcement 01"/>
+		<property name="moment" value="2019/11/03 10:40"/>
+		<property name="moreInfo"><null/></property>
+		<property name="text" value="This is the description of a sample announcement"/>
 	</bean>
-
-	<bean id="announcement2" class="acme.entities.announcements.Announcement">
-		<property name="title" value="Sample announcement 02" />
-		<property name="moment" value="2019/06/10 00:00" />
-		<property name="moreInfo" value="http://example.com" />
-		<property name="text" value="This is the description of another announcement" />
+	
+	<bean id="announcement02" class="acme.entities.announcements.Announcement">
+		<property name="title" value="Sample announcement 02"/>
+		<property name="moment" value="2019/10/28 12:30"/>
+		<property name="moreInfo" value="http://www.example.com"/>
+		<property name="text" value="This is the description of a sample announcement"/>
 	</bean>
-
-	<bean id="announcement3" class="acme.entities.announcements.Announcement">
-		<property name="title" value="Sample announcement 03" />
-		<property name="moment" value="1900/10/10 19:10" />
-		<property name="moreInfo" value="http://example.com" />
-		<property name="text" value="This is a very old announcement" />
+	
+	<bean id="announcement03" class="acme.entities.announcements.Announcement">
+		<property name="title" value="Sample announcement 03"/>
+		<property name="moment" value="2019/05/20 09:40"/>
+		<property name="moreInfo" value="http://www.example.com"/>
+		<property name="text" value="This is the description of a sample announcement"/>
 	</bean>
-
-	<bean id="announcement4" class="acme.entities.announcements.Announcement">
-		<property name="title" value="Sample announcement 04" />
-		<property name="moment" value="2019/11/05 00:00" />
-		<property name="moreInfo" value="http://example.com" />
-		<property name="text" value="This is an announcement was made in November" />
+	
+	<bean id="announcement04" class="acme.entities.announcements.Announcement">
+		<property name="title" value="Sample announcement 04"/>
+		<property name="moment" value="2019/11/01 09:40"/>
+		<property name="moreInfo" value="http://www.example.com"/>
+		<property name="text" value="Este si tiene menos de un mes"/>
+	</bean>
+	
+	<!-- Money para challenge -->
+	
+	<bean id="money01" class="acme.framework.datatypes.Money">
+		<property name="amount" value="500.00" />
+		<property name="currency" value="€" />
+	</bean>
+	
+	<bean id="money02" class="acme.framework.datatypes.Money">
+		<property name="amount" value="250.00" />
+		<property name="currency" value="€" />
+	</bean>
+	
+	<bean id="money03" class="acme.framework.datatypes.Money">
+		<property name="amount" value="100.00" />
+		<property name="currency" value="€" />
+	</bean>
+	 
+	
+	<!-- Challenges -->
+	
+	<bean id="challenge01" class="acme.entities.challenges.Challenge">
+		<property name="title" value="Sample challenge 01"/>
+		<property name="deadline" value="2020/06/28 23:59"/>
+		<property name="description" value="This is a simple description!"/>
+		<property name="goldReward" ref="money01"/>
+		<property name="silverReward" ref="money02"/>
+		<property name="bronzeReward" ref="money03"/>
+		<property name="goldGoal" value="Get the requirements of A!"/>
+		<property name="silverGoal" value="Get the requirements of B!"/>
+		<property name="bronzeGoal" value="Get the requirements of C!"/>
+	</bean>
+	
+	<bean id="challenge02" class="acme.entities.challenges.Challenge">
+		<property name="title" value="Sample challenge 02"/>
+		<property name="deadline" value="2019/07/20 09:00"/>
+		<property name="description" value="This is a simple description!"/>
+		<property name="goldReward" ref="money01"/>
+		<property name="silverReward" ref="money02"/>
+		<property name="bronzeReward" ref="money03"/>
+		<property name="goldGoal" value="Get the requirements of A!"/>
+		<property name="silverGoal" value="Get the requirements of B!"/>
+		<property name="bronzeGoal" value="Get the requirements of C!"/>
+	</bean>
+	
+	<bean id="challenge03" class="acme.entities.challenges.Challenge">
+		<property name="title" value="Sample challenge 03"/>
+		<property name="deadline" value="2020/11/04 12:00"/>
+		<property name="description" value="This is a simple description!"/>
+		<property name="goldReward" ref="money01"/>
+		<property name="silverReward" ref="money02"/>
+		<property name="bronzeReward" ref="money03"/>
+		<property name="goldGoal" value="Get the requirements of A!"/>
+		<property name="silverGoal" value="Get the requirements of B!"/>
+		<property name="bronzeGoal" value="Get the requirements of C!"/>
 	</bean>
 
 

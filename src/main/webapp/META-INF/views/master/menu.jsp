@@ -18,6 +18,17 @@
 
 <acme:menu-bar code="master.menu.home">
 	<acme:menu-left>
+    
+    <!-- authenticated -->
+		
+		<acme:menu-option code="master.menu.authenticated" access="isAuthenticated()">
+			<acme:menu-suboption code="master.menu.authenticated.announcements" action="/authenticated/announcement/list" access="!hasRole('Administrator')"/>
+			<acme:menu-suboption code="master.menu.authenticated.announcements" action="/administrator/announcement/list" access="hasRole('Administrator')"/>
+			<acme:menu-suboption code="master.menu.authenticated.challenges" action="/authenticated/announcement/list" access="!hasRole('Administrator')"/>
+			<acme:menu-suboption code="master.menu.authenticated.challenges" action="/administrator/announcement/list" access="hasRole('Administrator')"/>
+		</acme:menu-option>
+
+    
 		<acme:menu-option code="master.menu.anonymous" access="isAnonymous()">
 			<acme:menu-suboption code="master.menu.anonymous.favourite-link1" action="http://www.youtube.com/"/>
 			<acme:menu-suboption code="master.menu.anonymous.favourite-link0" action="https://www.youtube.com/watch?v=ht6VF5no938"/>
@@ -25,6 +36,7 @@
 			<acme:menu-separator/>
       <acme:menu-suboption code="master.menu.anonymous.company-record.list" action="/anonymous/company-record/list"/>
       <acme:menu-suboption code="master.menu.anonymous.investor-record.list" action="/anonymous/investor-record/list"/>
+      <acme:menu-suboption code="master.menu.anonymous.announcements" action="/anonymous/announcement/list"/>
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.administrator" access="hasRole('Administrator')">

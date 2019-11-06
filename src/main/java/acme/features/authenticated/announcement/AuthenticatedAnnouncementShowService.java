@@ -13,13 +13,13 @@ import acme.framework.services.AbstractShowService;
 @Service
 public class AuthenticatedAnnouncementShowService implements AbstractShowService<Authenticated, Announcement> {
 
-	// Internal state ---------------------------------------------------------
+	//		Internal states ------------------
 
 	@Autowired
-	AuthenticatedAnnouncementRepository repository;
+	private AuthenticatedAnnouncementRepository repository;
 
 
-	// AbstractListService<Administrator, Announcement> interface ---------------
+	// AbstractShowService<Administrator, Announcement> interface -----
 
 	@Override
 	public boolean authorise(final Request<Announcement> request) {
@@ -34,7 +34,7 @@ public class AuthenticatedAnnouncementShowService implements AbstractShowService
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "moment", "title", "moreInfo", "text");
+		request.unbind(entity, model, "title", "moment", "moreInfo", "text");
 
 	}
 
@@ -50,5 +50,4 @@ public class AuthenticatedAnnouncementShowService implements AbstractShowService
 
 		return result;
 	}
-
 }

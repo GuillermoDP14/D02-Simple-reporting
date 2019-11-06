@@ -16,7 +16,7 @@ import acme.framework.entities.Authenticated;
 @RequestMapping("/authenticated/announcement/")
 public class AuthenticatedAnnouncementController extends AbstractController<Authenticated, Announcement> {
 
-	// Internal state ---------------------------------------------------------
+	//	Internal states -------------
 
 	@Autowired
 	private AuthenticatedAnnouncementListService	listService;
@@ -25,12 +25,11 @@ public class AuthenticatedAnnouncementController extends AbstractController<Auth
 	private AuthenticatedAnnouncementShowService	showService;
 
 
-	// Constructors -----------------------------------------------------------
+	//	Constructors ------
 
 	@PostConstruct
 	private void initialise() {
 		super.addBasicCommand(BasicCommand.LIST, this.listService);
 		super.addBasicCommand(BasicCommand.SHOW, this.showService);
 	}
-
 }

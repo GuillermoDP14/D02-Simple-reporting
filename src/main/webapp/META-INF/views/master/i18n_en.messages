@@ -33,6 +33,13 @@ master.menu.anonymous.favourite-link0 = Manuel's link
 master.menu.anonymous.favourite-link = Guillermo's link
 master.menu.anonymous.company-record.list = Company Records List
 master.menu.anonymous.investor-record.list = Investor Records List
+master.menu.anonymous.announcements = List announcements
+
+# master.menu.authenticated ########################################################
+
+master.menu.authenticated = Authenticated
+master.menu.authenticated.announcements = List announcements
+master.menu.authenticated.challenges = Challenges
 
 # master.menu.administrator ###################################################
 
