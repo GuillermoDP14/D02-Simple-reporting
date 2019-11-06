@@ -368,8 +368,8 @@ bg=yellow</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>490</x>
-      <y>305</y>
+      <x>495</x>
+      <y>315</y>
       <w>140</w>
       <h>80</h>
     </coordinates>
@@ -383,6 +383,27 @@ bg=yellow</panel_attributes>
 
 
 </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>650</x>
+      <y>305</y>
+      <w>155</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>Challenge
+--
++ title: String{NotBlank} 
++ deadline: Date
++ description: String{NotBlank}
++ goldReward: Money
++ silverReward: Money
++ bronzeReward: Money
++ goldGoal: String{NotBlank}
++ silverGoal: String{NotBlank}
++ bronzeGoal: String{NotBlank}</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>
