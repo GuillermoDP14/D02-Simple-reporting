@@ -34,6 +34,7 @@ public class Announcement extends DomainEntity {
 	private Date				moment;
 
 	//	@NotBlank (es opcional)
+
 	@URL
 	private String				moreInfo;
 
@@ -43,4 +44,5 @@ public class Announcement extends DomainEntity {
 	// Derived attributes ------------------------------
 
 	// Relationships -----------------------------------
+
 }
