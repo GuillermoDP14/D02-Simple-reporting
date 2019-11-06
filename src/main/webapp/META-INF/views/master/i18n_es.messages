@@ -34,18 +34,24 @@ master.menu.anonymous.favourite-link0 = Enlace de Manuel
 master.menu.anonymous.favourite-link = Enlace de Guillermo
 master.menu.anonymous.company-record.list = Lista de Registros de Compañías
 master.menu.anonymous.investor-record.list = Lista de Registros de Inversiones
-master.menu.anonymous.announcements = Listar anuncios
+master.menu.anonymous.announcement.list = Listar anuncios
 
 # master.menu.authenticated ########################################################
 
 master.menu.authenticated = Autenticado
-master.menu.authenticated.announcements = Listar anuncios
-master.menu.authenticated.challenges = Desafíos
+master.menu.authenticated.reporting = Simple reporting
+master.menu.authenticated.announcement.list = Listar anuncios
+master.menu.authenticated.request.list = Peticiones activas
+master.menu.authenticated.offer.list = Ofertas activas
+master.menu.authenticated.company-record.list = Lista de Registros de Compañías
+master.menu.authenticated.investor-record.list =  Lista de Registros de Inversiones
+master.menu.authenticated.challenge.list = Lista de desafíos
 
 # master.menu.administrator ###################################################
 
 master.menu.administrator = Administrador
 master.menu.administrator.user-accounts = Cuentas de usuario
+master.menu.administrator.announcements = Todos los anuncios
 master.menu.administrator.configuration = Configuracion
 master.menu.administrator.shutdown = Parar el sistema
 
@@ -67,14 +73,6 @@ master.menu.user-account.provider = Datos de proveedor
 master.menu.user-account.become-provider = Hazte proveedor
 master.menu.user-account.consumer = Datos de consumidor
 master.menu.user-account.become-consumer = Hazte consumidor
-
-master.menu.user-account.reporting = Información simple
-
-master.menu.user-account.announcement.list = Nuevos anuncios
-master.menu.user-account.request.list = Peticiones activas
-master.menu.user-account.offer.list = Ofertas activas
-master.menu.user-account.company-record.list = Lista de Registros de Compañías
-master.menu.user-account.investor-record.list = Lista de Registros de Inversiones
 
 # master.footer ###############################################################
 

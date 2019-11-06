@@ -15,8 +15,8 @@ authenticated.offer.list.label.deadline = Deadline
 authenticated.offer.form.label.title = Title:
 authenticated.offer.form.label.text = Text:
 authenticated.offer.form.label.moment = Moment:
-authenticated.request.form.label.deadline = Deadline:
-authenticated.request.form.label.reward = Reward:
+authenticated.offer.form.label.deadline = Deadline:
+authenticated.offer.form.label.reward = Reward:
 authenticated.offer.form.label.ticker = Ticker:
 
 authenticated.offer.button.return = Return

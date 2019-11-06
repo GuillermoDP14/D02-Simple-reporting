@@ -33,18 +33,25 @@ master.menu.anonymous.favourite-link0 = Manuel's link
 master.menu.anonymous.favourite-link = Guillermo's link
 master.menu.anonymous.company-record.list = Company Records List
 master.menu.anonymous.investor-record.list = Investor Records List
-master.menu.anonymous.announcements = List announcements
+master.menu.anonymous.announcement.list = List announcements
 
 # master.menu.authenticated ########################################################
 
 master.menu.authenticated = Authenticated
-master.menu.authenticated.announcements = List announcements
-master.menu.authenticated.challenges = Challenges
+master.menu.authenticated.reporting = Simple reporting
+master.menu.authenticated.announcement.list = List announcements
+master.menu.authenticated.request.list = Active requests
+master.menu.authenticated.offer.list = Active offers
+master.menu.authenticated.company-record.list = Company Records List
+master.menu.authenticated.investor-record.list = Investor Records List
+master.menu.authenticated.challenge.list = List challenges
+
 
 # master.menu.administrator ###################################################
 
 master.menu.administrator = Administrator
 master.menu.administrator.user-accounts = User accounts
+master.menu.administrator.announcements = All announcements
 master.menu.administrator.configuration = Configuration
 master.menu.administrator.shutdown = Shut down
 
@@ -66,13 +73,6 @@ master.menu.user-account.provider = Provider data
 master.menu.user-account.become-provider = Become a provider
 master.menu.user-account.consumer = Consumer data
 master.menu.user-account.become-consumer = Become a consumer
-
-master.menu.user-account.reporting = Simple reporting
-master.menu.user-account.announcement.list = Announcement list
-master.menu.user-account.request.list = Active requests
-master.menu.user-account.offer.list = Active offers
-master.menu.user-account.company-record.list = Company Records List
-master.menu.user-account.investor-record.list = Investor Records List
 
 
 # master.footer ###############################################################

@@ -21,16 +21,13 @@
     
     <!-- authenticated -->
 		
-		<acme:menu-option code="master.menu.authenticated" access="isAuthenticated()">
-			<acme:menu-suboption code="master.menu.authenticated.announcements" action="/authenticated/announcement/list" access="!hasRole('Administrator')"/>
-			<acme:menu-suboption code="master.menu.authenticated.announcements" action="/administrator/announcement/list" access="hasRole('Administrator')"/>
-			<acme:menu-suboption code="master.menu.authenticated.challenges" action="/authenticated/challenge/list" access="!hasRole('Administrator')"/>
-			<acme:menu-suboption code="master.menu.authenticated.challenges" action="/administrator/challenge/list" access="hasRole('Administrator')"/>
-			<acme:menu-suboption code="master.menu.user-account.announcement.list" action="/authenticated/announcement/list"/>
-			<acme:menu-suboption code="master.menu.user-account.request.list" action="/authenticated/request/list"/>
-			<acme:menu-suboption code="master.menu.user-account.offer.list" action="/authenticated/offer/list"/>
-			<acme:menu-suboption code="master.menu.user-account.company-record.list" action="/authenticated/company-record/list"/>
-			<acme:menu-suboption code="master.menu.user-account.investor-record.list" action="/authenticated/investor-record/list"/>
+		<acme:menu-option code="master.menu.authenticated.reporting" access="isAuthenticated()">			
+			<acme:menu-suboption code="master.menu.authenticated.announcement.list" action="/authenticated/announcement/list"/>
+			<acme:menu-suboption code="master.menu.authenticated.request.list" action="/authenticated/request/list"/>
+			<acme:menu-suboption code="master.menu.authenticated.offer.list" action="/authenticated/offer/list"/>
+			<acme:menu-suboption code="master.menu.authenticated.company-record.list" action="/authenticated/company-record/list"/>
+			<acme:menu-suboption code="master.menu.authenticated.investor-record.list" action="/authenticated/investor-record/list"/>
+			<acme:menu-suboption code="master.menu.authenticated.challenge.list" action="/authenticated/challenge/list" />
 		</acme:menu-option>
 
     
@@ -41,12 +38,13 @@
 			<acme:menu-separator/>
       <acme:menu-suboption code="master.menu.anonymous.company-record.list" action="/anonymous/company-record/list"/>
       <acme:menu-suboption code="master.menu.anonymous.investor-record.list" action="/anonymous/investor-record/list"/>
-      <acme:menu-suboption code="master.menu.anonymous.announcements" action="/anonymous/announcement/list"/>
+      <acme:menu-suboption code="master.menu.anonymous.announcement.list" action="/anonymous/announcement/list"/>
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.administrator" access="hasRole('Administrator')">
 			<acme:menu-suboption code="master.menu.administrator.user-accounts" action="/administrator/user-account/list"/>
 			<acme:menu-separator/>
+			<acme:menu-suboption code="master.menu.administrator.announcements" action="/administrator/announcement/list" />
 			<acme:menu-suboption code="master.menu.administrator.configuration" action="/administrator/configuration/show"/>
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.administrator.shutdown" action="/master/shutdown"/>

@@ -4,7 +4,7 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>410</x>
+      <x>370</x>
       <y>120</y>
       <w>120</w>
       <h>30</h>
@@ -18,7 +18,7 @@ bg=yellow</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>425</x>
+      <x>385</x>
       <y>145</y>
       <w>50</w>
       <h>55</h>
@@ -29,7 +29,7 @@ bg=yellow</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>160</x>
+      <x>120</x>
       <y>70</y>
       <w>110</w>
       <h>60</h>
@@ -49,7 +49,7 @@ bg=orange
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>160</x>
+      <x>120</x>
       <y>25</y>
       <w>120</w>
       <h>30</h>
@@ -62,7 +62,7 @@ bg=blue</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>460</x>
+      <x>420</x>
       <y>145</y>
       <w>50</w>
       <h>55</h>
@@ -73,7 +73,7 @@ bg=blue</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>585</x>
+      <x>545</x>
       <y>125</y>
       <w>50</w>
       <h>30</h>
@@ -88,7 +88,7 @@ bg=yellow</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>585</x>
+      <x>545</x>
       <y>85</y>
       <w>50</w>
       <h>30</h>
@@ -103,7 +103,7 @@ bg=yellow</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>585</x>
+      <x>545</x>
       <y>160</y>
       <w>50</w>
       <h>30</h>
@@ -118,7 +118,7 @@ bg=yellow</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>525</x>
+      <x>485</x>
       <y>105</y>
       <w>70</w>
       <h>40</h>
@@ -129,7 +129,7 @@ bg=yellow</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>525</x>
+      <x>485</x>
       <y>130</y>
       <w>70</w>
       <h>15</h>
@@ -140,7 +140,7 @@ bg=yellow</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>525</x>
+      <x>485</x>
       <y>130</y>
       <w>70</w>
       <h>45</h>
@@ -151,7 +151,7 @@ bg=yellow</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>160</x>
+      <x>120</x>
       <y>140</y>
       <w>110</w>
       <h>35</h>
@@ -167,7 +167,7 @@ bg=orange</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>355</x>
+      <x>315</x>
       <y>190</y>
       <w>100</w>
       <h>45</h>
@@ -182,7 +182,7 @@ Provider
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>470</x>
+      <x>430</x>
       <y>190</y>
       <w>105</w>
       <h>45</h>
@@ -197,7 +197,7 @@ Consumer
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>40</x>
+      <x>0</x>
       <y>120</y>
       <w>110</w>
       <h>65</h>
@@ -217,7 +217,7 @@ bg=yellow</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>40</x>
+      <x>0</x>
       <y>195</y>
       <w>110</w>
       <h>45</h>
@@ -234,7 +234,7 @@ bg=yellow</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>380</x>
+      <x>340</x>
       <y>0</y>
       <w>170</w>
       <h>65</h>
@@ -256,7 +256,7 @@ UserAccount
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>465</x>
+      <x>425</x>
       <y>60</y>
       <w>35</w>
       <h>70</h>
@@ -270,9 +270,9 @@ has v</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>350</x>
+      <x>310</x>
       <y>255</y>
-      <w>155</w>
+      <w>160</w>
       <h>45</h>
     </coordinates>
     <panel_attributes>Announcement
@@ -288,9 +288,9 @@ has v</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>0</x>
+      <x>30</x>
       <y>250</y>
-      <w>325</w>
+      <w>230</w>
       <h>65</h>
     </coordinates>
     <panel_attributes>Request
@@ -307,9 +307,9 @@ has v</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>5</x>
+      <x>35</x>
       <y>320</y>
-      <w>315</w>
+      <w>230</w>
       <h>75</h>
     </coordinates>
     <panel_attributes>Offer
@@ -318,8 +318,8 @@ has v</panel_attributes>
 + moment: Date {Temporal(TIMESTAMP), Past}
 + deadline: Date {Temporal(TIMESTAMP)}
 + text: String {NotBlank}
-+ minMoney: Money {NotNull, Valid}
-+ maxMoney: Money {NotNull, Valid}
++ minMoney: Money 
++ maxMoney: Money 
 + ticker: String {NotBlank, Pattern(regexp = "^([O][A-Z]{4}[-][0-9]{5})$")}
 </panel_attributes>
     <additional_attributes/>
@@ -327,7 +327,7 @@ has v</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>165</x>
+      <x>125</x>
       <y>195</y>
       <w>175</w>
       <h>40</h>
@@ -344,7 +344,7 @@ bg=yellow</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>345</x>
+      <x>295</x>
       <y>315</y>
       <w>140</w>
       <h>80</h>
@@ -354,10 +354,10 @@ bg=yellow</panel_attributes>
 + name: String {NotBlank}
 + sector: String {NotBlank}
 + coName: String {NotBlank}
-+ web: String {URL}
-+ phone: String {NotBlank}{Pattern}
++ web: String {URL, NotBlank}
++ phone: String {NotBlank}{Pattern(regexp = "^([+]([1-9][0-9]{0,3})\\s)?([(]{0,1}[0-9]{1,4}[)])?[0-9].{5,9}$")}
 + mail: String {NotBlank}
-+ inc: boolean {NotBlank}
++ inc: boolean 
 + stars: int {min=0 max=5}
 
 
@@ -368,10 +368,10 @@ bg=yellow</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>495</x>
+      <x>455</x>
       <y>315</y>
-      <w>140</w>
-      <h>80</h>
+      <w>135</w>
+      <h>50</h>
     </coordinates>
     <panel_attributes>InvestorRecord
 --
@@ -388,7 +388,7 @@ bg=yellow</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>650</x>
+      <x>610</x>
       <y>305</y>
       <w>155</w>
       <h>90</h>
@@ -396,7 +396,7 @@ bg=yellow</panel_attributes>
     <panel_attributes>Challenge
 --
 + title: String{NotBlank} 
-+ deadline: Date
++ deadline: Date {Temporal(TIMESTAMP)}
 + description: String{NotBlank}
 + goldReward: Money
 + silverReward: Money
@@ -409,7 +409,7 @@ bg=yellow</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>615</x>
+      <x>575</x>
       <y>225</y>
       <w>130</w>
       <h>55</h>
